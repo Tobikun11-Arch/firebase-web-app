@@ -43,7 +43,8 @@ export const AuthContextProvider: React.FC<AuthContextProviderProps> = ({ childr
     return (
         <AuthContext.Provider value={{ user }}>
         {loading ? <div className="h-screen bg-white text-black flex justify-center items-center">
-          Loading...</div> : children}
+          <img src="/generating.gif" alt="Animated GIF" width={100} height={200} />  
+        </div> : children}
         </AuthContext.Provider>
     );
 };
